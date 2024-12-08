@@ -81,12 +81,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,              KC_W,              KC_E,              KC_R,              KC_T,              KC_Y,              KC_U,              KC_I,              KC_O,              KC_P,
         LGUI_T(KC_A),      LALT_T(KC_S),      LCTL_T(KC_D),      LSFT_T(KC_F),      KC_G,              KC_H,              RSFT_T(KC_J),      RCTL_T(KC_K),      RALT_T(KC_L),      RGUI_T(KC_QUOT),
         LT(_BUTTON, KC_Z), ALGR_T(KC_X),      KC_C,              KC_V,              KC_B,              KC_N,              KC_M,              KC_COMM,           ALGR_T(KC_DOT),    LT(_BUTTON, KC_SLSH),
-                                              LT(_MEDIA, KC_TAB), LT(_NAV, KC_SPC),   LT(_MOUSE, KC_ENT), LT(_SYM, KC_ESC),   LT(_NUM, KC_BSPC),  LT(_FUN, KC_DEL)
+                                              LT(_MEDIA, KC_TAB), LT(_NAV, KC_SPC),   LT(_FUN, KC_ENT), LT(_SYM, KC_ESC),   LT(_NUM, KC_BSPC),  LT(_FUN, KC_DEL)
     ),
     [_BUTTON] = LAYOUT_split_3x5_3(
-        U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,
+        RESET,             DPI_RMOD,          DPI_MOD,           S_D_RMOD,          S_D_MOD,           S_D_RMOD,          S_D_MOD,           DPI_RMOD,          DPI_MOD,           RESET,
         KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           KC_NO,             KC_NO,             KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,
-        U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,
+        U_NA,              DRGSCRL,           SNIPING,           U_NA,              U_NA,              U_NU,              U_NU,              SNIPING,           DRGSCRL,           U_NU,
                                               KC_BTN3,           KC_BTN2,           KC_BTN1,           KC_BTN1,           KC_BTN2,           KC_BTN3
     ),
     [_NAV] = LAYOUT_split_3x5_3(
@@ -96,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                               U_NA,              U_NA,              U_NA,              KC_ENT,            KC_BSPC,           KC_DEL
     ),
     [_MOUSE] = LAYOUT_split_3x5_3(
-        RESET,             U_NA,              U_NA,              U_NA,              U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,
+        RESET,             DPI_RMOD,          DPI_MOD,           S_D_RMOD,          S_D_MOD,           U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,
         KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              KC_MS_L,           KC_MS_D,           KC_MS_U,           KC_MS_R,           U_NU,
         U_NA,              KC_ALGR,           U_NA,              U_NA,              U_NA,              KC_WH_L,           KC_WH_D,           KC_WH_U,           KC_WH_R,           U_NU,
                                               U_NA,              U_NA,              U_NA,              KC_BTN1,           KC_BTN3,           KC_BTN2
